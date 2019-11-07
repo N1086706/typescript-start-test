@@ -1,3 +1,5 @@
-import * as QRCode from 'qrcode';       
-QRCode.toFile('./tast-1.png','Today is 星期二');
-
+import * as readlineSync from 'readline-sync';
+import * as QRCode from 'qrcode';
+let yourName = readlineSync.question('May I have your name? ');
+/*console.log('Hi ' + yourName + '!');*/ 
+QRCode.toFile('./qr.png',yourName)

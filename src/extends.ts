@@ -19,7 +19,7 @@ class Bird extends Animal{          //我繼承老爸DNA(我用語法糖)
     }
     eat(){
         super.eat();          //呼叫老爸的吃()
-        /*console.log('我複寫了我老爸的');*/          //我自己的吃()
+        /*console.log('我複寫了我老爸的');          //我自己的吃()*/
     }
 }
 let bird1 = new Bird('九官鳥',24);          //我的鳥園新增鳥兒
